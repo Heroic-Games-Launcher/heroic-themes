@@ -1,0 +1,27 @@
+body.high-contrast {
+  --accent: #00ddff;
+  --accent-overlay: #36ddff;
+  --navbar-accent: #ffffffff;
+  --background: #121212ff;
+  --body-background: #202020ff;
+  --background-darker: var(--background);
+  --current-background: var(--body-background);
+  --navbar-background: #121212ff;
+  --navbar-active-background: #202020ff;
+  --gradient-body-background: var(--background);
+  --input-background: #262937ff;
+  --modal-background: var(--background);
+  --modal-border: #ffffffff;
+  --download-button: #44475a;
+  --download-button-overlay: #007bff;
+  --success: #00ff40;
+  --success-hover: #2dff61;
+  --primary: #ff0090;
+  --primary-hover: #ff36a8;
+  --danger: #ff0000;
+  --text-title: #00ddff;
+  --icons-background: var(--background);
+  --osk-background: var(--body-background);
+  --osk-button-background: var(--input-background);
+  --osk-button-border: #ffffffff;
+}
