@@ -9,19 +9,20 @@ Change Heroic's appearance by choosing from a unique set of themes created by ot
 Setup Heroic to look for custom themes:
 
 1. Create a new folder, like "Heroic Themes", which is going to hold `.css` files of the themes.
-2. In Heroic, go to **Accessibility**
+2. In Heroic, go to **Accessibility**.
 3. Under _Custom Themes Path_, click on the folder icon.
 4. Navigate to the path where you've created the folder and select the folder.
 
 Now, you just need add the `.css` files of themes to this folder. You can explore the different themes in the repository.
+
 1. Choose a theme's folder.
-2. Select _theme_name.css_ present in the folder
-3. Click **Raw**
-4. Save the file to the folder you created above. For example, just right-click and choose "Save" from the context menu.
+2. Select _theme_name.css_ present in the folder.
+3. Click **Raw**.
+4. Save the file to the folder you've setup. For example, just right-click and choose "Save" from the context menu.
 
 Repeat the above steps for any theme.
 
-Heroic should now show the newly added custom themes under _Select Theme_ in **Accessibility**. 
+Heroic should now show the newly added custom themes under _Select Theme_ in **Accessibility**! 
 
 ## For Contributers
 Share custom-made themes for Heroic using CSS.
@@ -50,8 +51,9 @@ Stick to the following guidelines before submitting your theme -
     {
       "name" : "Theme Name",
       "filename" : "theme_name.css",
-      "screenshots" : ["screenshot_name.png", "another_screenshot_name.png"]
+      "screenshots" : ["screenshot_name.png", "another_screenshot_name.png"],
+      "author": "GitHub_username"
     }
     ```
- 3. Fork this repository and add the theme folder
- 4. Create a pull request
+ 3. Fork this repository and add your theme's folder.
+ 4. Create a pull request.
