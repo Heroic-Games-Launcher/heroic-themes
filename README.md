@@ -10,14 +10,14 @@ Setup Heroic to look for custom themes:
 
 1. Create a new folder, like "Heroic Themes", which is going to hold `.css` files of the themes.
 2. In Heroic, go to **Accessibility**.
-3. Under _Custom Themes Path_, click on the folder icon.
+3. Under _Custom Themes Path_, click the folder icon.
 4. Navigate to the path where you've created the folder and select the folder.
 
-Now, you just need add the `.css` files of themes to this folder. You can explore the different themes in the repository.
+Now, you just need to add the `.css` files of themes to this folder. You can explore the different themes in the repository.
 
 1. Choose a theme's folder.
 2. Select _theme_name.css_ present in the folder.
-3. Click **Raw**.
+3. Click **Raw**
 4. Save the file to the folder you've setup. For example, just right-click and choose "Save" from the context menu.
 
 Repeat the above steps for any theme.
@@ -31,7 +31,7 @@ Share custom-made themes for Heroic using CSS.
 Refer this [guide](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/wiki/Custom-Themes) for instructions and tips on how to create a theme.
 
 ### Submitting Themes
-Stick to the following guidelines before submitting your theme -
+Stick to the following guidelines before submitting your theme:
 
 1. The folder structure should look like this:
 
@@ -55,5 +55,5 @@ Stick to the following guidelines before submitting your theme -
       "author": "GitHub_username"
     }
     ```
- 3. Fork this repository and add your theme's folder.
+ 3. Fork this repository, create a new branch and add your theme's folder.
  4. Create a pull request.
