@@ -1,6 +1,6 @@
 {
   "name" : "Gruvbox Dark",
   "filename" : "gruvbox_dark.css",
-  "screenshots" : ["library.png", "downloads.png", "settings.png"],
+  "screenshots" : ["library.png", "downloads.png"],
   "author": "ha7ak3"
 }
