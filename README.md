@@ -57,3 +57,4 @@ Stick to the following guidelines before submitting your theme:
     ```
  3. Fork this repository, create a new branch and add your theme's folder.
  4. Create a pull request.
+ 5. Finally, add the "ready" label to indicate that the pull request is ready for review.
