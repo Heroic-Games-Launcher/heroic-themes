@@ -1,0 +1,37 @@
+body.lucid-volcano {
+  --accent: #B81E58;
+  --accent-overlay: #F20D63;
+  --navbar-accent: #dee0e1;
+  --background: #1E2031;
+  --body-background: var(--background);
+  --background-darker: var(--body-background);
+  --current-background: var(--body-background);
+  --navbar-background: #181B28;
+  --navbar-active-background: #1E2031;
+  --gradient-body-background: linear-gradient(
+    90deg,
+    var(--background-darker) -32px,
+    var(--body-background) 64px,
+    var(--body-background) 100%
+  );
+  --input-background: #181B28;
+  --modal-background: var(--body-background);
+  --modal-border: var(--body-background);
+  --success: #B81E58;
+  --success-hover: #F20D63;
+  --primary: #6516c0;
+  --primary-hover: #891fff;
+  --danger: #B81E58;
+  --danger-hover: #F20D63;
+  --text-log: #8C909B;
+  --text-title: #E9EAEB;
+  --text-default: var(--text-title);
+  --text-secondary: #92A4AB;
+  --icons-background: #252234;
+  --osk-background: var(--body-background);
+  --osk-button-background: var(--input-background);
+  --osk-button-border: var(--navbar-background);
+  --action-icon: #92A4AB;
+  --action-icon-hover: var(--accent-overlay);
+  --action-icon-active: var(--text-default);
+}
