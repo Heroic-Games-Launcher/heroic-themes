@@ -31,8 +31,8 @@ body.ocean {
     --download-button-overlay: #007bff;
     --success: var(--custom-accent);
     --success-hover: var(--custom-accent-hover);
-    --primary: #ff0090;
-    --primary-hover: #ff36a8;
+    --primary: var(--custom-accent);
+    --primary-hover: var(--custom-accent-hover);
     --danger: #ff0000;
     --text-title: #00ddff;
     --icons-background: var(--background);
