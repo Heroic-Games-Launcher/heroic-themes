@@ -5,6 +5,10 @@
 */
 
 body.ocean {
+    /*
+    * custom variables to be more expressive about what the colors actually set.
+    * (not that heroic folks did a bad job naming these!)
+    */
     --text: #BFC3C4;
     --custom-accent: #00A9A5;
     --custom-accent-hover: #14a5a3; 
