@@ -77,3 +77,15 @@ body.adwaita .divider {
   height: 1px;
   margin: var(--space-3xs) 0 !important;
 }
+
+body.adwaita .dmItemList {
+  border: none;
+}
+
+body.adwaita .downloadManagerListItem {
+  border-top: none !important;
+  box-shadow: 0 -1px 0 0 var(--tertiary-box-shadow-color);
+
+  margin: 0;
+  padding: var(--space-md) var(--space-sm-fixed);
+}
