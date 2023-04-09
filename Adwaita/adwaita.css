@@ -15,12 +15,17 @@ body.adwaita {
     --background: #232323;
     --secondary-background: #353535;
 
+    --button-background: #2d2d2d;
+    --button-text: white;
+
     --box-shadow-color: #1b1b1b;
     --secondary-box-shadow-color: #202020;
     --tertiary-box-shadow-color: #5a5a59;
 
     --box-shadow: 0 0 0 1px var(--box-shadow-color); 
     --secondary-box-shadow: var(--box-shadow-color);
+
+    --border-radius: var(--space-xs);
 
 
     --accent: var(--text);
@@ -88,4 +93,23 @@ body.adwaita .downloadManagerListItem {
 
   margin: 0;
   padding: var(--space-md) var(--space-sm-fixed);
+}
+
+body.adwaita .SearchBar,
+body.adwaita .gameCard {
+  border-radius: var(--border-radius);
+}
+
+body.adwaita .button,
+body.adwaita .sideloadGameButton {
+  background: var(--button-background);
+  color: var(--button-text);
+  box-shadow: var(--box-shadow);
+  
+  border-radius: var(--border-radius);
+}
+
+body.adwaita .button:hover,
+body.adwaita .sideloadGameButton:hover {
+  background: var(--secondary-background);
 }
