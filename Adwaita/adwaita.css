@@ -1,3 +1,9 @@
+/*
+thank you adwaita <333
+
+https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/gtk-contained-dark.css
+*/
+
 body.adwaita {
     /*
     * custom variables to be more expressive about what the colors actually set.
@@ -10,7 +16,8 @@ body.adwaita {
     --secondary-background: #353535;
 
     --box-shadow-color: #1b1b1b;
-    --secondary-box-shadow-color: var(--box-shadow-color);
+    --secondary-box-shadow-color: #202020;
+    --tertiary-box-shadow-color: #5a5a59;
 
     --box-shadow: 0 0 0 1px var(--box-shadow-color); 
     --secondary-box-shadow: var(--box-shadow-color);
@@ -22,6 +29,9 @@ body.adwaita {
     /*The text in the navbar, which isn't selected*/
     --navbar-accent: var(--text);
     
+    /*the color of the divider*/
+    --divider: var(--secondary-box-shadow-color);
+
     --body-background: var(--background);
     --background-darker: var(--background);
     --current-background: var(--background);
@@ -49,7 +59,9 @@ body.adwaita .Field>input,
 body.adwaita select, 
 body.adwaita .gameCard, 
 body.adwaita .gameCard>span,
-body.adwaita .SearchBar {
+body.adwaita .SearchBar,
+body.adwaita .progressHeader,
+body.adwaita .dmItemList {
   box-shadow: var(--box-shadow) !important;
 }
 
@@ -59,4 +71,9 @@ body.adwaita .store-icon {
 
 body.adwaita .Sidebar {
   box-shadow: 1px 0 0 0 var(--box-shadow-color);
+}
+
+body.adwaita .divider {
+  height: 1px;
+  margin: var(--space-3xs) 0 !important;
 }
