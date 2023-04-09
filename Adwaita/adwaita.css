@@ -66,7 +66,8 @@ body.adwaita .gameCard,
 body.adwaita .gameCard>span,
 body.adwaita .SearchBar,
 body.adwaita .progressHeader,
-body.adwaita .dmItemList {
+body.adwaita .dmItemList
+{
   box-shadow: var(--box-shadow) !important;
 }
 
@@ -104,7 +105,8 @@ body.adwaita .gameCard,
 body.adwaita .Field>input, 
 body.adwaita select, 
 body.adwaita .progressHeader,
-body.adwaita .dmItemList
+body.adwaita .dmItemList,
+body.adwaita .svg-button
 {
   border-radius: var(--border-radius);
 }
@@ -138,8 +140,16 @@ body.adwaita .ActionIcons .FormControl__button>svg{
   margin: auto;
 }
 
-body.adwaita .button,
-body.adwaita .sideloadGameButton {
+body.adwaita .toggle,
+body.adwaita .gameConfigContainer .titleWrapper .settings-icon {
+  color: var(--button-text) !important;
+  background: var(--button-background) !important;
+}
+
+body.adwaita *:not(.submenu)>.button,
+body.adwaita .sideloadGameButton,
+body.adwaita .svg-button, 
+body.adwaita .game-actions  {
   background: var(--button-background);
   color: var(--button-text);
   box-shadow: var(--box-shadow);
@@ -147,7 +157,10 @@ body.adwaita .sideloadGameButton {
   border-radius: var(--border-radius);
 }
 
-body.adwaita .button:hover,
-body.adwaita .sideloadGameButton:hover {
+body.adwaita *:not(.submenu).button:hover,
+body.adwaita .sideloadGameButton:hover,
+body.adwaita .svg-button:hover, 
+body.adwaita .gameConfigContainer .titleWrapper .settings-icon:hover {
   background: var(--secondary-background);
+  color: var(--button-text);
 }
