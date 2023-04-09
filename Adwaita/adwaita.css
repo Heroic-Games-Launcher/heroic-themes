@@ -148,7 +148,7 @@ body.adwaita .gameConfigContainer .titleWrapper .settings-icon {
 
 body.adwaita *:not(.submenu)>.button,
 body.adwaita .sideloadGameButton,
-body.adwaita .svg-button, 
+body.adwaita .titleWrapper .svg-button, 
 body.adwaita .game-actions  {
   background: var(--button-background);
   color: var(--button-text);
@@ -159,8 +159,8 @@ body.adwaita .game-actions  {
 
 body.adwaita *:not(.submenu).button:hover,
 body.adwaita .sideloadGameButton:hover,
-body.adwaita .svg-button:hover, 
-body.adwaita .gameConfigContainer .titleWrapper .settings-icon:hover {
-  background: var(--secondary-background);
+body.adwaita .titleWrapper .svg-button:hover, 
+body.adwaita .titleWrapper .settings-icon:hover {
+  background: var(--secondary-background) !important;
   color: var(--button-text);
 }
