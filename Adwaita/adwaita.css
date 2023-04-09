@@ -4,10 +4,16 @@ body.adwaita {
     * (not that heroic folks did a bad job naming these!)
     */
     --text: #BFC3C4;
-    --custom-accent: #00A9A5;
-    --custom-accent-hover: #14a5a3; 
-    --background: #131520;
-    --secondary-background: #0F111A;
+    --custom-accent: #15539E;
+    --custom-accent-hover: #225a9e; 
+    --background: #232323;
+    --secondary-background: #353535;
+
+    --box-shadow-color: #1b1b1b;
+    --secondary-box-shadow-color: var(--box-shadow-color);
+
+    --box-shadow: 0 0 0 1px var(--box-shadow-color); 
+    --secondary-box-shadow: var(--box-shadow-color);
 
 
     --accent: var(--text);
@@ -33,8 +39,24 @@ body.adwaita {
     --primary-hover: var(--custom-accent-hover);
     --danger: #ff0000;
     --text-title: #00ddff;
-    --icons-background: var(--background);
+    --icons-background: var(--secondary-background);
     --osk-background: var(--background);
     --osk-button-background: var(--secondary-background);
     --osk-button-border: #ffffffff;
   }
+
+body.adwaita .Field>input, 
+body.adwaita select, 
+body.adwaita .gameCard, 
+body.adwaita .gameCard>span,
+body.adwaita .SearchBar {
+  box-shadow: var(--box-shadow) !important;
+}
+
+body.adwaita .store-icon {
+  background: none;
+}
+
+body.adwaita .Sidebar {
+  box-shadow: 1px 0 0 0 var(--box-shadow-color);
+}
