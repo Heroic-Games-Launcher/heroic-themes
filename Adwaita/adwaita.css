@@ -1,0 +1,40 @@
+body.adwaita {
+    /*
+    * custom variables to be more expressive about what the colors actually set.
+    * (not that heroic folks did a bad job naming these!)
+    */
+    --text: #BFC3C4;
+    --custom-accent: #00A9A5;
+    --custom-accent-hover: #14a5a3; 
+    --background: #131520;
+    --secondary-background: #0F111A;
+
+
+    --accent: var(--text);
+    /*The text in the navbar, of the selected element*/
+    --accent-overlay: #fefefe;
+    /*The text in the navbar, which isn't selected*/
+    --navbar-accent: var(--text);
+    
+    --body-background: var(--background);
+    --background-darker: var(--background);
+    --current-background: var(--background);
+    --navbar-background: var(--secondary-background);
+    --navbar-active-background: var(--custom-accent);
+    --gradient-body-background: var(--background);
+    --input-background: var(--secondary-background);
+    --modal-background: var(--background);
+    --modal-border: #ffffffff;
+    --download-button: #44475a;
+    --download-button-overlay: #007bff;
+    --success: var(--custom-accent);
+    --success-hover: var(--custom-accent-hover);
+    --primary: var(--custom-accent);
+    --primary-hover: var(--custom-accent-hover);
+    --danger: #ff0000;
+    --text-title: #00ddff;
+    --icons-background: var(--background);
+    --osk-background: var(--background);
+    --osk-button-background: var(--secondary-background);
+    --osk-button-border: #ffffffff;
+  }
