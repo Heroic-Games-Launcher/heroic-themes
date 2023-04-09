@@ -45,7 +45,7 @@ body.adwaita {
     --gradient-body-background: var(--background);
     --input-background: var(--secondary-background);
     --modal-background: var(--background);
-    --modal-border: #ffffffff;
+    --modal-border: var(--box-shadow-color);
     --download-button: #44475a;
     --download-button-overlay: #007bff;
     --success: var(--custom-accent);
@@ -95,9 +95,47 @@ body.adwaita .downloadManagerListItem {
   padding: var(--space-md) var(--space-sm-fixed);
 }
 
+body.adwaita .numberOfgames {
+  background: none;
+}
+
 body.adwaita .SearchBar,
-body.adwaita .gameCard {
+body.adwaita .gameCard,
+body.adwaita .Field>input, 
+body.adwaita select, 
+body.adwaita .progressHeader,
+body.adwaita .dmItemList
+{
   border-radius: var(--border-radius);
+}
+
+body.adwaita .ActionIcons {
+  background: var(--button-background);
+  color: var(--button-text);
+  box-shadow: var(--box-shadow);
+  
+  border-radius: var(--border-radius);
+  height: 100%;
+}
+
+body.adwaita .ActionIcons .FormControl {
+  height: 100%;
+}
+
+body.adwaita .ActionIcons .FormControl .FormControl__button:first-child {
+  border-radius: var(--border-radius) 0 0 var(--border-radius) !important;
+}
+
+body.adwaita .ActionIcons .FormControl .FormControl__button:last-child {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
+}
+
+body.adwaita .ActionIcons .FormControl__button:hover {
+  background: var(--secondary-background);
+}
+
+body.adwaita .ActionIcons .FormControl__button>svg{
+  margin: auto;
 }
 
 body.adwaita .button,
