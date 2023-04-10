@@ -111,41 +111,67 @@ body.adwaita .svg-button
   border-radius: var(--border-radius);
 }
 
-body.adwaita .ActionIcons {
-  background: var(--button-background);
-  color: var(--button-text);
-  box-shadow: var(--box-shadow);
-  
-  border-radius: var(--border-radius);
-  height: 100%;
-}
-
-body.adwaita .ActionIcons .FormControl {
-  height: 100%;
-}
-
-body.adwaita .ActionIcons .FormControl .FormControl__button:first-child {
-  border-radius: var(--border-radius) 0 0 var(--border-radius) !important;
-}
-
-body.adwaita .ActionIcons .FormControl .FormControl__button:last-child {
-  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
-}
-
-body.adwaita .ActionIcons .FormControl__button:hover {
-  background: var(--secondary-background);
-}
-
-body.adwaita .ActionIcons .FormControl__button>svg{
-  margin: auto;
-}
-
 body.adwaita .toggle,
 body.adwaita .gameConfigContainer .titleWrapper .settings-icon {
   color: var(--button-text) !important;
   background: var(--button-background) !important;
 }
 
+
+/*
+* The filters and simmilar stuff in the Library thingie
+*/
+
+
+
+body.adwaita .Header__filters {
+  height: 100%;
+  min-height: 35px;
+}
+
+body.adwaita .platformFilters {
+  margin: 0;
+}
+
+body.adwaita .storeFilter {
+  margin: auto 24px;
+}
+
+body.adwaita *:has(>.FormControl) {
+  height: 100%;
+}
+
+body.adwaita .FormControl {
+  height: 100%;
+
+  background: var(--button-background);
+  color: var(--button-text);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+body.adwaita .FormControl .FormControl__button:first-child {
+  border-radius: var(--border-radius) 0 0 var(--border-radius) !important;
+}
+
+body.adwaita .FormControl .FormControl__button:last-child {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
+}
+
+body.adwaita .FormControl__button:hover,
+body.adwaita .FormControl__button.active  {
+  background: var(--secondary-background) !important;
+}
+
+body.adwaita .ActionIcons .FormControl__button>svg{
+  margin: auto;
+}
+
+
+/*
+* All default Buttons,
+* and their hovering
+*/
 body.adwaita *:not(.submenu)>.button,
 body.adwaita .sideloadGameButton,
 body.adwaita .titleWrapper .svg-button, 
@@ -164,3 +190,4 @@ body.adwaita .titleWrapper .settings-icon:hover {
   background: var(--secondary-background) !important;
   color: var(--button-text);
 }
+
