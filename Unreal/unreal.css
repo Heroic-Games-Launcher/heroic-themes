@@ -1,0 +1,82 @@
+body.unreal {
+  --accent: #d4d4d4;
+  --accent-overlay: #d6ecff;
+  --navbar-accent: #ffffffff;
+  --background: #121212ff;
+  --body-background: #202020ff;
+  --titlebar-color: var(--background);
+  --background-darker: var(--background);
+  --current-background: var(--body-background);
+  --navbar-background: #18181C;
+  --navbar-active-background: #18181C;
+  --navbar-inactive: #7c7c7c;
+  --gradient-body-background: var(--background);
+  --input-background: #23252a;
+  --modal-background: var(--background);
+  --modal-border: #ffffffff;
+  --download-button: #26BBFF;
+  --download-button-overlay: #26BBFF;
+  --success: #00ff40;
+  --success-hover: #2dff61;
+  --primary: #ff0090;
+  --primary-hover: #ff36a8;
+  --danger: #ff0000;
+  --text-title: #00ddff;
+  --icons-background: var(--background);
+  --osk-background: var(--body-background);
+  --osk-button-background: var(--input-background);
+  --osk-button-border: #ffffffff;
+  --action-icon-hover: var(--text-title)
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.Sidebar::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--navbar-background);
+}
+
+.Sidebar {
+  border-right: 3px solid #202020;
+}
+
+[data-testid="MinimizeIcon"] {
+  position: relative;
+  top: -0.25em;
+}
+
+.Sidebar__item {
+  padding: 0.75em 2em;
+}
+.Sidebar__item:hover {
+  padding-inline-start: unset;
+  padding: 0.75em 2em;
+  color: var(--accent);
+}
+.collapsed .Sidebar__item:hover {
+  padding-inline-start: unset;
+  padding: var(--space-xs) 0;
+  color: var(--accent);
+}
+
+.Sidebar__itemIcon svg {
+  transform: scale(1.2);
+}
+.Sidebar__itemIcon {
+  margin-inline-end: 20px
+}
+
+.SidebarSubmenu {
+  margin: 0.25em 0.75em;
+}
+.collapsed .SidebarSubmenu {
+  margin: 0em;
+  border-radius: 1rem;
+  background-color: #202024 !important;
+}
+
+.SearchBar {
+  border-radius: 0.25em;
+}
