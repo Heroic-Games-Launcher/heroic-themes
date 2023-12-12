@@ -1,0 +1,37 @@
+body.rose-pine {
+  --accent: #f6c177;
+  --accent-overlay: #ea9d34;
+  --navbar-accent: #ebbcba;
+  --background: #232136;
+  --body-background: #2a273f;
+  --background-darker: var(--body-background);
+  --current-background: var(--body-background);
+  --navbar-background: #26233a;
+  --navbar-active-background: #1f1d2e;
+  --gradient-body-background: linear-gradient(
+    90deg,
+    var(--background-darker) -32px,
+    var(--body-background) 64px,
+    var(--body-background) 100%
+  );
+  --input-background: #26233a;
+  --modal-background: var(--body-background);
+  --modal-border: var(--body-background);
+  --success: #9ccfd8;
+  --success-hover: #31748f;
+  --primary: #eb6f92;
+  --primary-hover: #ebbcba;
+  --danger: #b4637a;
+  --danger-hover: #d7827e;
+  --anticheat-denied: #b4637a;
+  --anticheat-broken: #f6c177;
+  --anticheat-running: #eb6f92;
+  --anticheat-supported: #3e8fb0;
+  --anticheat-planned: #c4a7e7;
+  --text-title: #e0def4;
+  --icons-background: #6e6a86;
+  --action-icon: #e0def4;
+  --action-icon-hover: #907aa9;
+  --action-icon-active: #56949f;
+  --icon-disabled: #9893a5;
+}
