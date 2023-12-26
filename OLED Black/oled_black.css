@@ -1,0 +1,34 @@
+body.oled_black {
+  --accent: #0E4749;
+  --accent-overlay: var(--primary);
+  --anticheat-denied: var(--danger);
+  --background: black;
+  --background-darker: var(--background);
+  --body-background: var(--background);
+  --current-background: var(--background);
+  --danger: #cc2525;
+  --danger-hover: #f00b0b;
+  --download-button: #44475a;
+  --download-button-overlay: var(--download-button);
+  --gradient-body-background: var(--background);
+  --icons-background: var(--background);
+  --input-background: #111111;
+  --modal-background: var(--background);
+  --modal-border: white;
+  --navbar-accent: white;
+  --navbar-active-background: #002626;
+  --navbar-background: var(--background);
+  --osk-background: var(--body-background);
+  --osk-button-background: var(--input-background);
+  --osk-button-border: white;
+  --primary: #82A3A1;
+  --primary-hover: #a5d3d0;
+  --success: #1b8836;
+  --success-hover: #2dff61;
+  --status-warning: var(--danger);
+  --status-warning-hover: var(--danger-hover);
+  --text-default: var(--text-title);
+  --text-secondary: #a5d5d8;
+  --text-title: white;
+}
+
