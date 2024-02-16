@@ -1,0 +1,252 @@
+/* Variables */
+body.fluent {
+  --text-default: #bebebe;
+  --text-secondary: #c3eeff;
+  --text-tertiary: #11111b;
+  --background: #333;
+  --background-darker: #202020;
+  --background-lighter: #454545;
+  --body-background: #202020;
+  --modal-background: rgba(17, 17, 27, 1);
+  --gradient-body-background: #202020;
+  --input-background: #2e2e2e;
+  --controller-hints-background: transparent;
+  --current-background: #202020;
+  --modal-border: #333333;
+  --osk-background: #2b2b2b;
+  --osk-button-background: #323232;
+  --osk-button-border: #11111b;
+  --search-bar-background: #323232;
+  --search-bar-border: #323232;
+  --action-icon: #fff;
+  --action-icon-hover: #49aae5;
+  --action-icon-active: #40bdff;
+  --icons-background: #2b2b2b;
+  --primary-button: #40bdff;
+  --primary-button-overlay: #383838;
+  --secondary-button: #49aae5;
+  --secondary-button-overlay: #40bdff;
+  --tertiary-button: #bebebe;
+  --tertiary-button-overlay: #c91f37;
+  --success-button: #61bf84;
+  --disabled-button: #202020;
+  --disabled-button-overlay: #11111b;
+  --navbar-active: #40bdff;
+  --navbar-inactive: #fff;
+  --navbar-active-background: #323232;
+  --navbar-accent: #49aae5;
+  --navbar-background: #202020;
+  --divider: #202020;
+  --success: #61bf84;
+  --success-hover: #94e2d5;
+  --danger: #bebebe;
+  --danger-hover: #c91f37;
+  --primary: #40bdff;
+  --secondary: #49aae5;
+  --accent: #40bdff;
+  --status-success: #61bf84;
+  --status-warning: #bebebe;
+  --status-danger: #c91f37;
+  --status-info: #40bdff;
+  --neutral-01: #11111b;
+  --neutral-02: #202020;
+  --neutral-03: #323232;
+  --neutral-04: #49aae5;
+  --neutral-05: #bebebe;
+  --neutral-06: #fff;
+  --brand-secondary: #323232;
+  --accent-overlay: var(--action-icon-active);
+}
+
+/* Reset select and input styles */
+body.fluent select,
+body.fluent input {
+  box-shadow: none !important;
+}
+
+/* Button styles with transitions */
+button {
+  background: var(--primary-button);
+  color: var(--icons-background);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: var(--primary-button-overlay);
+}
+
+/* Modal styles */
+.modal {
+  background: var(--modal-background);
+  border: 1px solid var(--modal-border);
+  padding: 10px;
+}
+
+/* Sidebar styles */
+.Sidebar {
+  width: 200px;
+  transition: width 0.3s ease;
+}
+
+.Sidebar__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.Sidebar__item.active {
+  background: var(--body-background);
+  color: var(--navbar-active);
+}
+
+.Sidebar__item:not(.exclude-bar)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 0;
+  width: 2px;
+  background: var(--navbar-accent);
+  transform-origin: top left;
+  transition: height 0.3s cubic-bezier(0.4, 2.3, 0.2, 1);
+}
+
+.Sidebar__item.active:not(.exclude-bar)::before {
+  height: calc(100% - 10px);
+}
+
+.Sidebar__item:hover {
+  width: 200px;
+}
+/* search bar stuff */
+.SearchBar {
+  padding: 2; /* Remove padding for the SearchBar */
+  border-radius: 4px;
+  height: 40px;
+}
+
+/* If needed, you can remove padding for child elements individually */
+.SearchBar .searchButton {
+  padding: 0;
+}
+
+.SearchBar .searchBarInput {
+  padding: 0;
+}
+
+button.selectStyle {
+  height: 40px;
+  box-shadow: none !important;
+}
+
+.backButton {
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1); /* Exponential curve for zoom-in effect */
+}
+
+.backButton:hover {
+  transform: scale(0.8); /* Zoom out on hover */
+}
+
+.backButton:active {
+  animation: zoomOutAnimation 0.5s ease-in-out; /* Apply the zoom-out animation on click */
+}
+
+@keyframes zoomOutAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+/* Main dialog container */
+.InstallModal__dialog {
+  background-color: #202020; /* Replace with your desired background color */
+  color: #ffffff; /* Replace with your desired text color */
+  border-radius: 10px; /* Adjust border radius as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow for depth */
+}
+
+/* Close button styles */
+.Dialog__CloseButton {
+  background-color: transparent; /* Set to transparent to match the dialog background */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.Dialog__CloseIcon {
+  color: #ffffff; /* Replace with your desired close icon color */
+}
+
+/* Header styles */
+.Dialog__header {
+  background-color: #333333; /* Replace with your desired header background color */
+  padding: 15px; /* Adjust padding as needed */
+  border-radius: 10px 10px 0 0; /* Add border-radius to match dialog */
+}
+
+.Dialog__headerTitle {
+  margin: 0;
+  font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Content container styles */
+.settingsDialogContent {
+  padding: 15px; /* Adjust padding as needed */
+}
+
+/* Tab styles */
+.MuiTabs-root {
+  background-color: #202020; /* Replace with your desired tab background color */
+}
+
+.MuiTabs-indicator {
+  background-color: #333333; /* Replace with your desired tab indicator color */
+}
+
+/* Input and label styles */
+.hiddenCheckbox {
+  display: none;
+}
+
+.toggleSwitchWrapper {
+  color: #ffffff; /* Replace with your desired text color */
+}
+
+/* Text input field styles */
+.textInputFieldWrapper {
+  margin-bottom: 15px; /* Adjust margin as needed */
+}
+
+/* Help link styles */
+.helpLink {
+  color: #40bdff; /* Replace with your desired link color */
+  cursor: pointer;
+}
+
+/* Save and AppName styles */
+.save,
+.appName {
+  color: #bebebe; /* Replace with your desired text color */
+  display: block;
+  margin-top: 15px; /* Adjust margin as needed */
+}
+
+/* Adjustments for a responsive design */
+@media (max-width: 600px) {
+  .InstallModal__dialog {
+    max-width: 80%; /* Adjust the maximum width for smaller screens */
+  }
+}
