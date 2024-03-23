@@ -56,6 +56,103 @@ body.fluent {
   --neutral-06: #fff;
   --brand-secondary: #323232;
   --accent-overlay: var(--action-icon-active);
+/* additonal testing */
+  --font-family-icons: "Segoe Fluent Icons";
+  --icon-forward: "\E72A";
+  --icon-back: "\E72B";
+  --icon-refresh: "\E72C";
+  --icon-cancel: "\E711";
+  --icon-chevron-up: "\E70E";
+  --icon-chevron-down: "\E70D";
+  --icon-play: "\e768"";
+  --icon-pause: "\E769";
+  --icon-play-solid: "\F5B0";
+  --icon-pause-solid: "\F8AE";
+  --icon-stop: "\E71A";
+  --icon-blocked: "\F140";
+  --icon-download: "\E896";
+  --icon-downloads: "\E71D";
+  --icon-checkmark: "\E73E";
+  --icon-cloud: "\E753";
+  --icon-cloud-download: "\EBD3";
+  --icon-contact: "\E77B";
+  --icon-contacts: "\E716";
+  --icon-contact-info: "\E779";
+  --icon-contact-solid: "\EA8C";
+  --icon-ease-of-acccess: "\E776";
+  --icon-gamepad: "\E7FC";
+  --icon-hardware: "\E950";
+  --icon-installed: "\EC76";
+  --icon-new-window: "\E78B";
+  --icon-screentime: "\F182";
+  --icon-share: "\E72D";
+  --icon-settings: "\E713";
+  --icon-settings-solid: "\F8B0";
+  --icon-sliders: "\E9E9";
+  --icon-star: "\E734";
+  --icon-star-solid: "\E735";
+  --icon-store: "\E719";
+  --icon-storage: "\EDA2";
+  --icon-remove: "\ECC9";
+  --icon-more: "\E712";
+  
+  
+}
+.backButton {
+  color: white !important;
+  background-color: transparent !important;
+}
+.backButton > svg {
+  display: none;
+}
+
+.backButton::before {
+  content: var(--icon-back);
+  font-family: var(--font-family-icons);
+  padding: 12px 12px;
+  border-radius: 5px;
+}
+
+.buttonWithIcon:has(svg[data-testid=PauseIcon])::before {
+  content: var(--icon-pause-solid);
+}
+
+.button:has(svg[data-testid=DownloadOutlinedIcon])::before,
+.buttonWithIcon:has(svg[data-testid=DownloadIcon])::before {
+  content: var(--icon-download);
+}
+circle {
+  color: rgba(0, 0, 0, 0.3) !important;
+  visibility: hidden;
+}
+
+
+svg.store-icon {
+  background-color: rgba(0, 0, 0, 0.3) !important; /* Transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+}
+.backButton:hover::before {
+  background-color: transparent;
+}
+
+span.icons {
+  color: transparent;
+}
+.gameCard>.icons>.playIcon {
+  background-color: var(--success);
+  color: var(--success-button);
+  justify-self: flex-end;
+}
+
+.gameCard>.icons>.downIcon {
+  background-color: var(--tertiary-button);
+  color: var(--neutral-03);
+  justify-self: flex-end;
+}
+
+
+.gameConfigContainer {
+  background-color: transparent;
 }
 
 /* Reset select and input styles */
