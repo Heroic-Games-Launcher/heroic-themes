@@ -1,0 +1,40 @@
+body.tokyo-night-light {
+  --background: #e1e2e7;
+  --background-darker: #cbccd1;
+  --background-secondary: #c4c8da;
+  --background-lighter: #c4c8da;
+  --accent: #2e7de9;
+
+  --navbar-background: var(--background);
+  --body-background: var(--background-darker);
+  --current-background: var(--body-background);
+  --text-default: #4c505e;
+  --text-secondary: var(--text-default);
+  --text-tertiary: var(--background);
+  --navbar-accent: #51597d;
+  --navbar-active: var(--accent);
+  --navbar-active-background: #c4c8da;
+  --success: #38919f;
+  --success-hover: #387068;
+  --input-background: var(--background);
+  --modal-background: var(--body-background);
+  --modal-border: var(--body-background);
+  --primary: #c64343;
+  --primary-hover: #f52a65;
+  --danger: #85353e;
+  --danger-hover: #c64343;
+  --anticheat-denied: var(--danger);
+  --anticheat-broken: #8c6c3e;
+  --anticheat-running: var(--text-default);
+  --anticheat-supported: #587539;
+  --anticheat-planned: #7847bd;
+  --text-title: var(--text-default);
+  --icons-background: var(--background-lighter);
+  --action-icon: var(--navbar-accent);
+  --action-icon-hover: var(--text-default);
+  --action-icon-active: var(--accent);
+  --icon-disabled: #a8aecb;
+  --cancel-button: #8c6c3e;
+  --neutral-06: var(--text-default);
+  --gamecard-title-color: #e1e2e7cc;
+}

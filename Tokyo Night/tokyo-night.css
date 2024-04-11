@@ -1,0 +1,40 @@
+body.tokyo-night {
+  --background: #1a1b26;
+  --background-darker: #16161e;
+  --background-secondary: #323035;
+  --background-lighter: #292e42;
+  --accent: #7aa2f7;
+  --accent-overlay: var(--accent);
+
+  --navbar-background: var(--background);
+  --body-background: var(--background-darker);
+  --current-background: var(--body-background);
+  --text-default: #c0caf5;
+  --text-secondary: var(--text-default);
+  --text-tertiary: var(--background);
+  --navbar-accent: #787c99;
+  --navbar-active: var(--accent);
+  --navbar-active-background: #292e42;
+  --success: #41a6b5;
+  --success-hover: #73daca;
+  --input-background: var(--background);
+  --modal-background: var(--body-background);
+  --modal-border: var(--body-background);
+  --primary: #db4b4b;
+  --primary-hover: #f7768e;
+  --danger: #bb616b;
+  --danger-hover: #db4b4b;
+  --anticheat-denied: var(--danger);
+  --anticheat-broken: #bba461;
+  --anticheat-running: var(--text-default);
+  --anticheat-supported: #9ece6a;
+  --anticheat-planned: #9d7cd8;
+  --text-title: var(--text-default);
+  --icons-background: var(--background-lighter);
+  --action-icon: var(--navbar-accent);
+  --action-icon-hover: var(--text-default);
+  --action-icon-active: var(--accent);
+  --icon-disabled: #3b4261;
+  --cancel-button: #e0af68;
+  --neutral-06: var(--text-default);
+}
