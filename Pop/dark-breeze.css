@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* Apply these styles to the body element with class 'dark-breeze' */
+body.dark-breeze {
+    /* Font family */
+    font-family: 'Noto Sans', sans-serif;
+
+    /* Color variables */
+    --accent: #3daee9; /* Breeze Blue */
+    --accent-overlay: #6cabf7; /* Lighter Breeze Blue for overlays */
+    --navbar-accent: #ffffff; /* Navbar text color */
+    --background: #232629; /* Dark background */
+    --body-background: #31363b; /* Slightly lighter body background */
+    --background-darker: #1d1f21; /* Darker background */
+    --current-background: var(--body-background); /* Dynamic background */
+    --navbar-background: #3D4043; /* Navbar background color */
+    --navbar-active-background: #4a4e51; /* Active item background in navbar */
+
+    /* Input and modal backgrounds */
+    --input-background: #45494e; /* Input background color */
+    --modal-background: #31363b; /* Modal background */
+    --modal-border: #5c6166; /* Modal border color */
+
+    /* Status colors */
+    --success: #16a085; /* Success color (green) */
+    --success-hover: #1abc9c; /* Hover state for success */
+    --primary: #3daee9; /* Primary color (same as accent) */
+    --primary-hover: #5eb7f0; /* Primary hover state */
+    --danger: #cc6666; /* Danger color (light red) */
+    --danger-hover: #d54e53; /* Hover state for danger */
+
+    /* Anticheat status colors */
+    --anticheat-denied: #cc6666; /* Anticheat denied color */
+    --anticheat-broken: #f39c12; /* Anticheat broken color */
+    --anticheat-running: #3daee9; /* Anticheat running color */
+    --anticheat-supported: #16a085; /* Anticheat supported color */
+    --anticheat-planned: #c17d11; /* Anticheat planned color */
+
+    /* Text and icon colors */
+    --text-title: #eff0f1; /* Light text color for titles */
+    --icons-background: #4a4e51; /* Icons background color */
+    --action-icon: #eff0f1; /* Actionable icons */
+    --action-icon-hover: #3daee9; /* Hover state for actionable icons */
+    --action-icon-active: #16a085; /* Active state for actionable icons */
+    --icon-disabled: #828282; /* Disabled icons */
+}
