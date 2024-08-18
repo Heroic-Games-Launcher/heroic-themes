@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+body.pop {
+    font-family: 'Fira Sans', sans-serif;
+    --accent: #48b9c7;
+    --accent-overlay: #ffa300;
+    --navbar-accent: #ffffff;
+    --background: #1d2021;
+    --body-background: #282828;
+    --background-darker: var(--body-background);
+    --current-background: var(--body-background);
+    --navbar-background: #32302f;
+    --navbar-active-background: #282828;
+
+    --gradient-body-background: linear-gradient(
+        90deg, 
+        var(--background-darker) -32px,
+        var(--body-background) 64px,
+        var(--body-background) 100%
+    );
+
+    --input-background: #32302f;
+    --modal-background: var(--body-background);
+    --modal-border: var(--body-background);
+
+    --success: #3b8188a8;
+    --success-hover: #3b8188;
+    --primary: #336b6d;
+    --primary-hover: #679395;
+    --danger: #d32f2f;
+    --danger-hover: #e57373;
+
+    --anticheat-denied: #ff6655;
+    --anticheat-broken: #fe8019;
+    --anticheat-running: #458588;
+    --anticheat-supported: #b8bb26;
+    --anticheat-planned: #d3869b;   
+
+    --text-title: #ffffff;
+    --icons-background: #3c3836;
+    --action-icon: #ffffff;
+    --action-icon-hover: #b16286;
+    --action-icon-active: #8ec07c;
+    --icon-disabled: #928374;
+}
