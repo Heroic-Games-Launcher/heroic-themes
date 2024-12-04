@@ -1,0 +1,73 @@
+/* Special thanks to Catppuccin for the inspiration of this theme */
+
+body.Medi0gre-Light {
+  --text-default: #474545;
+  --text-secondary: #747475;
+  --text-tertiary: #E6E6E6;
+
+  --background: #eff1f5;
+  --background-darker: #E6E6E6;
+  --background-lighter: #DADADA;
+  --body-background: #eff1f5;
+  --gradient-body-background: #eff1f5;
+  --input-background: #E5E5E5;
+  --controller-hints-background: transparent;
+  --current-background: #eff1f5;
+  --modal-background: #E1E1E1;
+  --modal-border: #3F70AD;
+  --osk-background: #ECECEC;
+  --osk-button-background: #DADADA;
+  --osk-button-border: #dce0e8;
+  --search-bar-background: #D9D9D9;
+  --search-bar-border: #DADADA;
+
+  --action-icon: #474545;
+  --action-icon-hover: #6E90B8;
+  --action-icon-active: #89b4fa;
+  --icons-background: #eff1f5;
+
+  /* Updated download button color */
+  --primary-button: #474545; /* Download button color */
+  --primary-button-overlay: #474545; /* Keep the overlay the same */
+  --secondary-button: #6E90B8; /* Hover/Secondary button color */
+  --secondary-button-overlay: #ea76cb;
+  --tertiary-button: #D08E4E;
+  --tertiary-button-overlay: #fe640b;
+  --success-button: #4E79AF;
+  --disabled-button: #e6e9ef;
+  --disabled-button-overlay: #dce0e8;
+
+  --navbar-active: #474545;
+  --navbar-inactive: #474545;
+  --navbar-active-background: #C9C9C9;
+  --navbar-accent: #4E79AF;
+  --navbar-background: #E5E5E5;
+  --divider: #e6e9ef;
+
+  --success: #6E90B8;
+  --success-hover: #4E79AF;
+  --danger: #D08E4E;
+  --danger-hover: #fe640b;
+
+  --primary: #474545;
+  --secondary: #9352E7;
+  --accent: #4E79AF;
+
+  --status-success: #40a02b;
+  --status-warning: #D08E4E;
+  --status-danger: #CF5151;
+  --status-info: #4E79AF;
+
+  --neutral-01: #E5E5E5;
+  --neutral-02: #eff1f5;
+  --neutral-03: #DADADA;
+  --neutral-04: #ACACAC;
+  --neutral-05: #848484;
+  --neutral-06: #474747;
+}
+
+body.Medi0gre-Light select,
+body.Medi0gre-Light input {
+  box-shadow: none !important;
+}
+
