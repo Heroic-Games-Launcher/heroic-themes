@@ -1,0 +1,44 @@
+body{
+    --accent: #ff2a6d;
+    --accent-overlay: #fcee09;
+    --navbar-accent: #00fff7;
+    --navbar-hover: #fcee09;
+
+    --background: #0f0f1a;
+    --body-background: #1a1a2e;
+    --background-darker: #101318;
+    --current-background: var(--body-background);
+    --navbar-background: #121420;
+    --navbar-active-background: #1a1a2e;
+
+    --gradient-body-background: linear-gradient(
+        90deg, var(--background-darker) -32px,
+    var(--body-background) 64px,
+    var(--body-background) 100%
+    );
+
+    --input-background: #161a20;
+    --modal-background: #1a1a2e;
+    --modal-border: #1a1a2e;
+
+    --success: #00fff7;
+    --success-hover: #fcee09;
+    --primary: #fcee09;
+    --primary-hover: #ff2a6d;
+    --danger: #ff2a6d;
+    --danger-hover: #ff5c8a;
+
+    --anticheat-denied: #9e0031;
+    --anticheat-broken: #e5005a;
+    --anticheat-running: #005f73;
+    --anticheat-supported: #ffee00;
+    --anticheat-planned: #9d4edd;
+
+    --text-title: #ffffff;
+    --icons-background: #1f2233;
+    --action-icon: #fcee09;
+    --action-icon-hover: #ff2a6d;
+    --action-icon-active: #ff2a6d;
+    --icon-disabled: #666666;
+}
+
