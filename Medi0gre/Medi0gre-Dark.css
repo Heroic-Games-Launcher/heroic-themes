@@ -1,0 +1,196 @@
+/* Special thanks to Adwaita for the inspiration of this theme */
+
+body.Medi0gre-Dark {
+  --text-default: #E0DFDF;
+  --text-secondary: #E0DFDF;
+  --text-tertiary: #E0DFDF;
+
+  --background: #232323;
+  --background-darker: #232323;
+  --background-lighter: #353535;
+  --body-background: #232323;
+  --gradient-body-background: #232323;
+  --input-background: #353535;
+  --controller-hints-background: transparent;
+  --current-background: #232323;
+  --modal-background: #232323;
+  --modal-border: #1b1b1b;
+  --osk-background: #232323;
+  --osk-button-background: #353535;
+  --osk-button-border: #ffffff;
+  --search-bar-background: #353535;
+  --search-bar-border: #2d2d2d;
+
+  --action-icon: #E0DFDF;
+  --action-icon-hover: #4E79AF;
+  --action-icon-active: #6E90B8;
+  --icons-background: #353535;
+
+  --primary-button: #2d2d2d;
+  --primary-button-overlay: #2d2d2d;
+  --secondary-button: #2d2d2d;
+  --secondary-button-overlay: #4E79AF;
+  --tertiary-button: #B05757;
+  --tertiary-button-overlay: #fe640b;
+  --success-button: #6E90B8;
+  --disabled-button: #5E5C5C;
+  --disabled-button-overlay: #2d2d2d;
+
+  --navbar-active: #E0DFDF;
+  --navbar-inactive: #E0DFDF;
+  --navbar-active-background: #6E90B8;
+  --navbar-accent: #4E79AF;
+  --navbar-background: #353535;
+  --divider: #5E5C5C;
+
+  --success: #6E90B8;
+  --success-hover: #4E79AF;
+  --danger: #B05757;
+  --danger-hover: #fe640b;
+
+  --primary: #6E90B8;
+  --secondary: #4E79AF;
+  --accent: #4E79AF;
+
+  --status-success: #75CA85;
+  --status-warning: #D08E4E;
+  --status-danger: #B05757;
+  --status-info: #4E79AF;
+
+  --neutral-01: #5E5C5C;
+  --neutral-02: #232323;
+  --neutral-03: #353535;
+  --neutral-04: #2d2d2d;
+  --neutral-05: #1b1b1b;
+  --neutral-06: #E0DFDF;
+}
+
+body.Medi0gre-Dark select,
+body.Medi0gre-Dark input {
+  box-shadow: none !important;
+}
+
+body.Medi0gre-Dark .Field > input, 
+body.Medi0gre-Dark select, 
+body.Medi0gre-Dark .gameCard, 
+body.Medi0gre-Dark .gameCard > span,
+body.Medi0gre-Dark .SearchBar,
+body.Medi0gre-Dark .progressHeader,
+body.Medi0gre-Dark .dmItemList {
+  box-shadow: none !important;
+}
+
+body.Medi0gre-Dark .store-icon {
+  background: none;
+}
+
+body.Medi0gre-Dark .Sidebar {
+  box-shadow: 1px 0 0 0 var(--neutral-05);
+}
+
+body.Medi0gre-Dark .divider {
+  height: 1px;
+  margin: var(--space-3xs) 0 !important;
+}
+
+body.Medi0gre-Dark .dmItemList {
+  border: none;
+}
+
+body.Medi0gre-Dark .downloadManagerListItem {
+  border-top: none !important;
+  box-shadow: 0 -1px 0 0 var(--neutral-06);
+
+  margin: 0;
+  padding: var(--space-md) var(--space-sm-fixed);
+
+  background-color: #353535 !important;
+}
+
+body.Medi0gre-Dark .numberOfgames {
+  background: none;
+}
+
+body.Medi0gre-Dark .SearchBar,
+body.Medi0gre-Dark .gameCard,
+body.Medi0gre-Dark .Field > input, 
+body.Medi0gre-Dark select, 
+body.Medi0gre-Dark .progressHeader,
+body.Medi0gre-Dark .dmItemList,
+body.Medi0gre-Dark .svg-button {
+  border-radius: var(--border-radius);
+}
+
+body.Medi0gre-Dark .toggle,
+body.Medi0gre-Dark .gameConfigContainer .titleWrapper .settings-icon {
+  color: var(--text-default) !important;
+  background: var(--primary-button) !important;
+}
+
+body.Medi0gre-Dark .Header__filters {
+  height: 100%;
+  min-height: 35px;
+}
+
+body.Medi0gre-Dark .platformFilters {
+  margin: 0;
+}
+
+body.Medi0gre-Dark .storeFilter {
+  margin: auto 24px;
+}
+
+body.Medi0gre-Dark *:has(>.FormControl) {
+  height: 100%;
+}
+
+body.Medi0gre-Dark .FormControl {
+  height: 100%;
+
+  background: var(--primary-button);
+  color: var(--text-default);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+
+body.Medi0gre-Dark .FormControl .FormControl__button:first-child {
+  border-radius: var(--border-radius) 0 0 var(--border-radius) !important;
+}
+
+body.Medi0gre-Dark .FormControl .FormControl__button:last-child {
+  border-radius: 0 var(--border-radius) var(--border-radius) 0 !important;
+}
+
+body.Medi0gre-Dark .FormControl__button:hover,
+body.Medi0gre-Dark .FormControl__button.active {
+  background: var(--secondary-button) !important;
+}
+
+body.Medi0gre-Dark .ActionIcons .FormControl__button > svg {
+  margin: auto;
+}
+
+/* All default Buttons, and their hovering */
+body.Medi0gre-Dark *:not(.submenu) > .button,
+body.Medi0gre-Dark .sideloadGameButton,
+body.Medi0gre-Dark .titleWrapper .svg-button, 
+body.Medi0gre-Dark .game-actions {
+  background: var(--primary-button);
+  color: var(--text-default);
+  box-shadow: var(--box-shadow);
+
+  border-radius: var(--border-radius);
+}
+
+/* Hover state for the download button, if applicable */
+body.Medi0gre .downloadManagerListItem:hover {
+  background-color: #6E90B8 !important; /* Hover state color */
+}
+
+body.Medi0gre-Dark *:not(.submenu).button:hover,
+body.Medi0gre-Dark .sideloadGameButton:hover,
+body.Medi0gre-Dark .titleWrapper .svg-button:hover, 
+body.Medi0gre-Dark .titleWrapper .settings-icon:hover {
+  background: var(--secondary-button) !important;
+  color: var(--text-default);
+}
